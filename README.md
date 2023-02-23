@@ -1,3 +1,3 @@
-# Template-museum-Bootsrap
+# Template-museum-bootsrap-simple
 
-![tampilan design musuem](https://user-images.githubusercontent.com/86379691/220829840-e3ac58d9-a17e-49de-90ee-e908a6ae2080.png)
+![tampilan design musuem](https://user-images.githubusercontent.com/86379691/220830374-bc384d1a-c91b-4f2f-b482-5a646a6052df.png)
