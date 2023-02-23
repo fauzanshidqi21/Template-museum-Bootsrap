@@ -1,0 +1,130 @@
+<!--
+    # ===============================
+    # Classic Museum Template
+    # ===============================
+    # @Author: Fauzan Shidqi
+    # @Email:  fauzanshidqi21@gmail.com
+    # @Create: 23/02/2023
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Museum</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300&display=swap" rel="stylesheet"
+        />
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="#">MUSEUM</a>
+                    <button 
+                        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#ticket">Ticket</a>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+
+        <section class="container-fluid px-0">
+            <div class="row align-items-center content" id="home">
+                <div class="col-lg-6">
+                    <div class="text-white text-center d-none d-lg-block" id="title-head">
+                        <h1>MUSEUM OF DINO</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/build.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row align-items-center" id="about">
+                <div class="col-md-6 order-2 order-md-1">
+                    <img class="img-fluid" src="images/about.jpg" alt="">
+                </div>
+                <div class="col-md-6 text-center order-1">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb pt-3">
+                            <h2>About</h2>
+                            <img 
+                                src="images/fossil.png" 
+                                height="60" 
+                                alt="" 
+                                class="d-none d-lg-inline"
+                            />
+                            <p class="lead">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione facilis esse ex accusantium ipsa explicabo ad, perferendis suscipit officiis deserunt, minima doloremque? Similique deserunt qui esse temporibus rerum doloremque vel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center" id="ticket">
+                <div class="col-md-6 order-2 order-md-1">
+                    <img class="img-fluid" src="images/ticket.jpg" alt="">
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb pt-3">
+                            <h2>Ticket</h2>
+                            <img 
+                                src="images/fossil.png" 
+                                height="60" 
+                                alt="" 
+                                class="d-none d-lg-inline"
+                            />
+                            <p class="lead">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione facilis esse ex accusantium ipsa explicabo ad, perferendis suscipit officiis deserunt, minima doloremque? Similique deserunt qui esse temporibus rerum doloremque vel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+        </script>
+        <script>
+            $(function() {
+                $(document).scroll(function(){
+                    let $nav = $('#navbar')
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                })
+            })
+        </script>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-muted">&copy; 2022 Museum</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+              </ul>
+            </footer>
+          </div>
+    </body>
+</html>
